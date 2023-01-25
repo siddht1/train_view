@@ -28,14 +28,14 @@
     {
       "name": "RNC VASHI BORDER",
       "time": "00:10",
-      "status": "await",
-      "color":"purple"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "I7 VASHI",
       "time": "00:20",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"purple"
     },
     {
       "name": "I3 VASHI",
