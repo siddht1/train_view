@@ -54,6 +54,12 @@
       "time": "00:55",
       "status": "down",
       "color":"red"
+    },
+       {
+      "name": "I4 VASHI",
+      "time": "01:10",
+      "status": "up",
+      "color":"green"
     }
   ]
 }
