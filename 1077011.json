@@ -52,8 +52,8 @@
     {
       "name": "I4 VASHI",
       "time": "00:55",
-      "status": "slow",
-      "color":"yellow"
+      "status": "down",
+      "color":"red"
     }
   ]
 }
