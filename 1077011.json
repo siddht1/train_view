@@ -34,26 +34,26 @@
     {
       "name": "I7 VASHI",
       "time": "00:20",
-      "status": "await",
-      "color":"purple"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "I3 VASHI",
       "time": "00:40",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"purple"
     },
     {
       "name": "VASHI MAIN",
       "time": "00:45",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"purple"
     },
     {
       "name": "I4 VASHI",
       "time": "00:55",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"purple"
     }
   ]
 }
