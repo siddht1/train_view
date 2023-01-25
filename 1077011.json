@@ -4,47 +4,56 @@
     {
       "name": "S3 RNC",
       "time": "23:11",
-      "status": "down"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "MID RNC",
       "time": "23:15",
-      "status": "down"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "OUTER RNC",
       "time": "23:20",
-      "status": "down"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "S7 RNC",
       "time": "23:30",
-      "status": "down"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "RNC VASHI BORDER",
       "time": "00:10",
-      "status": "await"
+      "status": "await",
+      "color":"purple"
     },
     {
       "name": "I7 VASHI",
       "time": "00:20",
-      "status": "up"
+      "status": "up",
+      "color":"green"
     },
     {
       "name": "I3 VASHI",
       "time": "00:40",
-      "status": "up"
+      "status": "up",
+      "color":"green"
     },
     {
       "name": "VASHI MAIN",
       "time": "00:45",
-      "status": "up"
+      "status": "up",
+      "color":"green"
     },
     {
       "name": "I4 VASHI",
       "time": "00:55",
-      "status": "up"
+      "status": "up",
+      "color":"green"
     }
   ]
 }
