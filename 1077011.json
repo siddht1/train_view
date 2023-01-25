@@ -40,14 +40,14 @@
     {
       "name": "I3 VASHI",
       "time": "00:40",
-      "status": "await",
-      "color":"purple"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "VASHI MAIN",
       "time": "00:45",
-      "status": "await",
-      "color":"purple"
+      "status": "down",
+      "color":"red"
     },
     {
       "name": "I4 VASHI",
