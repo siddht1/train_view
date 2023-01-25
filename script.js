@@ -25,7 +25,7 @@ function updateDataAndDOM() {
 }
 
 function updateDOM(data) {
-  document.title = 'TRAIN STATUS|| 1077011';
+  document.title = 'TRAIN STATUS|| 1077012 || 1077011';
   const container = document.querySelector('.status');
 
   let elementsString = '';
