@@ -36,7 +36,7 @@ function updateDOM(data) {
   //header add
   const header = document.createElement('header');
 header.textContent = 'RNC to VASHI | train '+data.data[0].id;
-
+document.body.appendChild(header);
 
   let elementsString = '';
   data.data[0].route.status.forEach(status => {
