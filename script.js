@@ -31,11 +31,11 @@ function updateDataAndDOM(url) {
 
 function updateDOM(data) {
   //data.data[0].route.status
-  document.title = 'TRAIN STATUS|| 1077012 || 1077011';
+  document.title = 'TRAIN STATUS'+data.data[0].id;
   const container = document.querySelector('.status');
 
   let elementsString = '';
-  data.status.forEach(status => {
+  data.data[0].route.status.forEach(status => {
     elementsString += `
       <div class="status-${status.color}">
         <span class="server-status" type="${status.status}"></span>
