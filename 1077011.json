@@ -82,33 +82,33 @@
         {
       "name": "RNC VASHI BORDER",
       "time": "02:10",
-      "status": "slow",
-      "color":"yellow"
+      "status": "down",
+      "color":"red"
     },
            {
       "name": "OUTER RNC",
       "time": "02:40",
-      "status": "await",
-      "color":"violet"
+      "status": "slow",
+      "color":"yellow"
     },
         {
       "name": "S7 RNC",
       "time": "02:50",
       "status": "await",
-      "color":"violet"
+      "color":"purple"
     },
         {
       "name": "MID RNC",
       "time": "03:00",
       "status": "await",
-      "color":"violet"
+      "color":"purple"
     },
 
     {
       "name": "S3 RNC",
       "time": "03:11",
       "status": "await",
-      "color":"violet"
+      "color":"purple"
     }
 
 
