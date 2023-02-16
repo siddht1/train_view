@@ -16,6 +16,7 @@ function updateDataAndDOM(url) {
     .then(fetchedData => {
       if (!data || JSON.stringify(data.status) !== JSON.stringify(fetchedData.status)) {
         data = fetchedData;
+        console.log(data);
         updateDOM(data);
       }
       setTimeout(updateDataAndDOM, 5000);
