@@ -33,6 +33,10 @@ function updateDOM(data) {
   //data.data[0].route.status
   document.title = 'TRAIN STATUS || '+data.data[0].id;
   const container = document.querySelector('.status');
+  //header add
+  const header = document.createElement('header');
+header.textContent = 'RNC to VASHI | train '+data.data[0].id;
+
 
   let elementsString = '';
   data.data[0].route.status.forEach(status => {
