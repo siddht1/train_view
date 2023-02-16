@@ -1,11 +1,6 @@
 let data;
 
-// Get data and update DOM initially
-_url='https://train-api-git-main-siddht1.vercel.app/api/v1/trains';
-//'https://siddht1.github.io/train_view/1077011.json'
-updateDataAndDOM(_url);
-
-function updateDataAndDOM(url) {
+const updateDataAndDOM = (url) => {
   fetch(url)
     .then(response => {
       if (!response.ok) {
@@ -13,7 +8,6 @@ function updateDataAndDOM(url) {
       }
       return response.json();
     })
-
     .then(fetchedData => {
       if (!data || JSON.stringify(data) !== JSON.stringify(fetchedData)) 
       {
@@ -21,32 +15,36 @@ function updateDataAndDOM(url) {
         console.log(data);
         updateDOM(data);
       }
-      setTimeout(updateDataAndDOM, 5000);
+      setTimeout(() => updateDataAndDOM(url), 5000);
     })
     .catch(error => {
       console.error(error);
-      setTimeout(updateDataAndDOM, 5000);
+      setTimeout(() => updateDataAndDOM(url), 5000);
     });
-}
+};
 
-function updateDOM(data) {
-  //data.data[0].route.status
-  document.title = 'TRAIN STATUS || '+data.data[0].id;
+const updateDOM = ({ data }) => {
+  const { name, id, route } = data[0];
+  document.title = `TRAIN STATUS || ${id}`;
+  
   const container = document.querySelector('.status');
-  //header add
   const header = document.createElement('header');
-header.textContent = data.data[0].name+' || train '+data.data[0].id;
-const body = document.querySelector('body');
-body.insertBefore(header, body.firstChild);
+  header.textContent = `${name} || train ${id}`;
+  const body = document.querySelector('body');
+  body.insertBefore(header, body.firstChild);
 
-  let elementsString = '';
-  data.data[0].route.status.forEach(status => {
-    elementsString += `
-      <div class="status-${status.color}">
-        <span class="server-status" type="${status.status}"></span>
-        <span> ${status.name} | ${status.time}</span>
+  const elementsString = route.status.map(status => {
+    const { color, status: type, name, time } = status;
+    return `
+      <div class="status-${color}">
+        <span class="server-status" type="${type}"></span>
+        <span> ${name} | ${time}</span>
       </div>
     `;
-  });
+  }).join('');
+
   container.innerHTML = elementsString;
-}
+};
+
+const url = 'https://train-api-git-main-siddht1.vercel.app/api/v1/trains';
+updateDataAndDOM(url);
