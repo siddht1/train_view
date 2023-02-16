@@ -31,7 +31,7 @@ function updateDataAndDOM(url) {
 
 function updateDOM(data) {
   //data.data[0].route.status
-  document.title = 'TRAIN STATUS'+data.data[0].id;
+  document.title = 'TRAIN STATUS || '+data.data[0].id;
   const container = document.querySelector('.status');
 
   let elementsString = '';
