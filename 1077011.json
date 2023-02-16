@@ -70,45 +70,45 @@
         {
       "name": "I3 VASHI",
       "time": "01:20",
-      "status": "slow",
-      "color":"yellow"
+      "status": "down",
+      "color":"red"
     },
         {
       "name": "I7 VASHI",
       "time": "01:40",
-      "status": "await",
-      "color":"purple"
+      "status": "down",
+      "color":"red"
     },
         {
       "name": "RNC VASHI BORDER",
       "time": "02:10",
-      "status": "up",
-      "color":"green"
+      "status": "slow",
+      "color":"yellow"
     },
            {
       "name": "OUTER RNC",
       "time": "02:40",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"violet"
     },
         {
       "name": "S7 RNC",
       "time": "02:50",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"violet"
     },
         {
       "name": "MID RNC",
       "time": "03:00",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"violet"
     },
 
     {
       "name": "S3 RNC",
       "time": "03:11",
-      "status": "up",
-      "color":"green"
+      "status": "await",
+      "color":"violet"
     }
 
 
