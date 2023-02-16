@@ -36,7 +36,8 @@ function updateDOM(data) {
   //header add
   const header = document.createElement('header');
 header.textContent = data.data[0].name+' || train '+data.data[0].id;
-document.body.appendChild(header);
+const body = document.querySelector('body');
+body.insertBefore(header, body.firstChild);
 
   let elementsString = '';
   data.data[0].route.status.forEach(status => {
