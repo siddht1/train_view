@@ -13,8 +13,9 @@ function updateDataAndDOM(url) {
       }
       return response.json();
     })
+
     .then(fetchedData => {
-      if (!data || JSON.stringify(data.status) !== JSON.stringify(fetchedData.status)) {
+      if (!data || JSON.stringify(data.status) !== JSON.stringify(fetchedData.data[0].route.status)) {
         data = fetchedData;
         console.log(data);
         updateDOM(data);
