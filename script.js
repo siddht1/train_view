@@ -1,10 +1,12 @@
 let data;
 
 // Get data and update DOM initially
-updateDataAndDOM();
+_url='https://train-api-git-main-siddht1.vercel.app/api/v1/trains';
+//'https://siddht1.github.io/train_view/1077011.json'
+updateDataAndDOM(_url);
 
-function updateDataAndDOM() {
-  fetch('https://siddht1.github.io/train_view/1077011.json')
+function updateDataAndDOM(url) {
+  fetch(url)
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
