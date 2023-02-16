@@ -15,8 +15,9 @@ function updateDataAndDOM(url) {
     })
 
     .then(fetchedData => {
-      if (!data || JSON.stringify(data.status) !== JSON.stringify(fetchedData.data[0].route.status)) {
-        data = fetchedData.data[0].route;
+      if (!data || JSON.stringify(data) !== JSON.stringify(fetchedData)) 
+      {
+        data = fetchedData;
         console.log(data);
         updateDOM(data);
       }
@@ -29,6 +30,7 @@ function updateDataAndDOM(url) {
 }
 
 function updateDOM(data) {
+  //data.data[0].route.status
   document.title = 'TRAIN STATUS|| 1077012 || 1077011';
   const container = document.querySelector('.status');
 
