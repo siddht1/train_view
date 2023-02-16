@@ -35,7 +35,7 @@ function updateDOM(data) {
   const container = document.querySelector('.status');
   //header add
   const header = document.createElement('header');
-header.textContent = 'RNC to VASHI | train '+data.data[0].id;
+header.textContent = data.data[0].name+' || train '+data.data[0].id;
 document.body.appendChild(header);
 
   let elementsString = '';
