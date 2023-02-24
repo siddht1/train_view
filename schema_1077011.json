@@ -1,121 +1,75 @@
-
 {
-  "status": [
-    {
-      "name": "S3 RNC",
-      "time": "23:11",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "MID RNC",
-      "time": "23:15",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "OUTER RNC",
-      "time": "23:20",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "S7 RNC",
-      "time": "23:30",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "RNC VASHI BORDER",
-      "time": "00:10",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "I7 VASHI",
-      "time": "00:20",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "I3 VASHI",
-      "time": "00:40",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "VASHI MAIN",
-      "time": "00:45",
-      "status": "down",
-      "color":"red"
-    },
-    {
-      "name": "I4 VASHI",
-      "time": "00:55",
-      "status": "down",
-      "color":"red"
-    },
-       {
-      "name": "I4 VASHI",
-      "time": "01:10",
-      "status": "down",
-      "color":"red"
-    },
-        {
-      "name": "VASHI MAIN",
-      "time": "01:15",
-      "status": "down",
-      "color":"red"
-    },
-        {
-      "name": "I3 VASHI",
-      "time": "01:20",
-      "status": "down",
-      "color":"red"
-    },
-        {
-      "name": "I7 VASHI",
-      "time": "01:40",
-      "status": "down",
-      "color":"red"
-    },
-        {
-      "name": "RNC VASHI BORDER",
-      "time": "02:10",
-      "status": "down",
-      "color":"red"
-    },
-           {
-      "name": "OUTER RNC",
-      "time": "02:40",
-      "status": "down",
-      "color":"red"
-    },
-        {
-      "name": "S7 RNC",
-      "time": "02:50",
-      "status": "down",
-      "color":"red"
-    },
-        {
-      "name": "MID RNC",
-      "time": "03:00",
-      "status": "down",
-      "color":"red"
-    },
+	"title": " RT1yrru",
+	"stations": [{
+			"label": "S3 RNC",
+			"lines": ["route_1", "route_2", "route_3", "route_4", "route_5", "route_6", "route_7", "route_8", "route_9"]
+		},
+		{
+			"label": "MID RNC",
+			"lines": ["route_1", "route_2", "route_3", "route_4"]
+		},
 
-    {
-      "name": "S3 RNC",
-      "time": "03:11",
-      "status": "down",
-      "color":"red"
-    }
+		{
+			"label": "S7 RNC",
+			"lines": ["route_1"]
+		},
+		{
+			"label": "OUTER RNC",
+			"lines": ["route_1"]
+		},
+		{
+			"label": "RNC VASHI BORDER",
+			"lines": ["route_1"]
+		},
+		{
+			"label": "I7 VASHI",
+			"lines": ["route_1"]
+		},
+		{
+			"label": "I3 VASHI",
+			"lines": ["route_1"]
+		},
+
+		{
+			"label": "S10 RNC",
+			"lines": ["route_2"]
+		},
+		{
+			"label": "DEL",
+			"lines": ["route_2"]
+		},
+		{
+			"label": "GGN",
+			"lines": ["route_2"]
+		},
+		{
+			"label": "MUMB",
+			"lines": ["route_2"]
+		},
+		{
+			"label": "VASHI MAIN",
+			"lines": ["route_1", "route_2"]
+		},
+
+		{
+			"label": "S10 RNC",
+			"lines": ["route_3"]
+
+		}, {
+			"label": "ROU",
+			"lines": ["route_3"]
+		},
+		{
+			"label": "VSKP",
+			"lines": ["route_3"]
+		}, {
+			"label": "VZN",
+			"lines": ["route_3"]
+		}, {
+			"label": "CHN",
+			"lines": ["route_3"]
+		}
 
 
-  ]
+	]
 }
-
-
-
-
-
